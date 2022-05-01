@@ -25,6 +25,7 @@ function calculateLoan(e) {
       2
     );
     document.querySelector("#loader").removeAttribute("hidden");
+    document.querySelector("#result").setAttribute("hidden", "hidden");
     setTimeout(function () {
       document.querySelector("#loader").setAttribute("hidden", "hidden");
       document.querySelector("#result").removeAttribute("hidden");
