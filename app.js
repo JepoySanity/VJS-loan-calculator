@@ -1,5 +1,4 @@
 document.querySelector("#loan-form").addEventListener("submit", calculateLoan);
-
 function calculateLoan(e) {
   e.preventDefault();
   // Input Variables
@@ -45,4 +44,15 @@ function showError(error) {
   setTimeout(function () {
     document.querySelector(".alert").remove();
   }, 2000);
+}
+
+document.querySelector("#clear-result").addEventListener("click", function () {
+  clearFields();
+});
+
+function clearFields() {
+  document.querySelector("#result").setAttribute("hidden", "hidden");
+  amount.value = "";
+  interest.value = "";
+  years.value = "";
 }
