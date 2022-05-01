@@ -24,6 +24,11 @@ function calculateLoan(e) {
     totalInterest.value = (monthlyPmnt * calculatedPmnts - principal).toFixed(
       2
     );
+    document.querySelector("#loader").removeAttribute("hidden");
+    setTimeout(function () {
+      document.querySelector("#loader").setAttribute("hidden", "hidden");
+      document.querySelector("#result").removeAttribute("hidden");
+    }, 3000);
   } else {
     showError("Please check your number");
   }
