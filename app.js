@@ -25,6 +25,18 @@ function calculateLoan(e) {
       2
     );
   } else {
-    console.log("check you numbers");
+    showError("Please check your number");
   }
+}
+
+function showError(error) {
+  const card = document.querySelector(".error-heading");
+  const alert = document.createElement("div");
+  alert.className = "alert alert-danger";
+  alert.appendChild(document.createTextNode(error));
+  card.insertBefore(alert, card.firstChild);
+
+  setTimeout(function () {
+    document.querySelector(".alert").remove();
+  }, 2000);
 }
