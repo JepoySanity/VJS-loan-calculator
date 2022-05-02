@@ -1,3 +1,3 @@
-## Loan Calculator
-## a simple loan calculator using HTML, Bootstrap and Vanilla Javascript
+# Loan Calculator 🧮💲💸💰
+## a simple loan calculator using HTML, Bootstrap5 and Vanilla Javascript 👍
 
